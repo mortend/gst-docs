@@ -9,7 +9,8 @@ LOCAL_LDLIBS := -llog -landroid
 include $(BUILD_SHARED_LIBRARY)
 
 ifndef GSTREAMER_ROOT_ANDROID
-$(error GSTREAMER_ROOT_ANDROID is not defined!)
+GSTREAMER_ROOT_ANDROID := C:/gstreamer/android
+#$(error GSTREAMER_ROOT_ANDROID is not defined!)
 endif
 
 ifeq ($(TARGET_ARCH_ABI),armeabi)
